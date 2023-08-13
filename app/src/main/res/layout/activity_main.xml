@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,22 +11,42 @@
             android:id="@+id/startLoginPage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/background"
             android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="اهلا بكم في مؤسسة القرية الهندسية"
-                    android:textSize="30sp"/>
+                    android:layout_marginTop="70dp"
+                    android:gravity="center"
+                    android:text="اهلا بكم في مؤسسة القرية الهندسية حاضنة الموهوبين"
+                    android:fontFamily="@font/cairo_bold"
+                    android:textColor="@color/white"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textSize="22sp" android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:elevation="1000dp"
+                    android:src="@drawable/eng"
+                    />
 
                 <Button
                     android:id="@+id/btLoginStart"
-                    android:layout_width="200dp"
+                    android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="200dp"
+                    android:layout_marginTop="95dp"
+                    android:fontFamily="@font/cairo_black"
                     android:text="تسجيل الدخول"
-                    android:textSize="25sp" />
+                    android:textColor="#FAAA34"
+                    android:padding="10dp"
+                    android:background="@drawable/roundcornerstroke"
+                    android:textSize="22sp" />
 
         </LinearLayout>
 
@@ -41,8 +61,9 @@
                     android:id="@+id/etUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username"
-                    android:layout_marginTop="320dp"/>
+                    android:layout_marginTop="320dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:hint="Username" />
 
                 <EditText
                     android:id="@+id/etPassword"

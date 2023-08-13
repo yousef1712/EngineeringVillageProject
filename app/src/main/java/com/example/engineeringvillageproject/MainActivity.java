@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                     startLoginPage.setVisibility(View.GONE);
                     loginPage.setVisibility(View.VISIBLE);
                 }
-
             }
         });
     }

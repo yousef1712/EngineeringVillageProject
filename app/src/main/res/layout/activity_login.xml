@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btProgrammingClub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="نادي البرمجة"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btEngineeringClub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="نادي الهندسة"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btScienceClub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="نادي العلوم"
+        android:textSize="30sp" />
+</LinearLayout>

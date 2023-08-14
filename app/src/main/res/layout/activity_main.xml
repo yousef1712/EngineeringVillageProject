@@ -12,7 +12,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/back"
-            android:orientation="vertical">
+            android:visibility="gone"
+           android:orientation="vertical">
 
 
 
@@ -74,23 +75,42 @@
             android:id="@+id/loginPage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:background="@drawable/back"
+
+            android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/engener"
+                    />
 
                 <EditText
                     android:id="@+id/etUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="320dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="15dp"
+                    android:background="@drawable/roundcornerstroke"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
                     android:fontFamily="@font/cairo_bold"
-                    android:hint="Username" />
+                    android:hint="الاسم" />
 
                 <EditText
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="password"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginTop="15dp"
+                    android:padding="15dp"
+                    android:background="@drawable/roundcornerstroke"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/cairo_bold"
+                    android:hint="كلمة المرور" />
 
                 <Button
                     android:id="@+id/btLogin"
@@ -98,7 +118,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="25dp"
-                    android:text="login"
+                    android:background="@drawable/roundcornerstroke"
+                    android:text="دخول"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/cairo_medium"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:backgroundTint="#FFAE21"
                     android:textSize="25sp"/>
 
         </LinearLayout>

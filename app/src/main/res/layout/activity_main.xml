@@ -11,36 +11,56 @@
             android:id="@+id/startLoginPage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/background"
+            android:background="@drawable/back"
             android:orientation="vertical">
+
+
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/engener"
+                    />
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
-                    android:gravity="center"
-                    android:text="اهلا بكم في مؤسسة القرية الهندسية حاضنة الموهوبين"
+
                     android:fontFamily="@font/cairo_bold"
-                    android:textColor="@color/white"
+                    android:gravity="center"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:textSize="22sp" android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:text="مؤسسة القرية الهندسية حاصنة الموهوبين"
+                    android:textColor="#2D82D1"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="40dp"
-                    android:elevation="1000dp"
-                    android:src="@drawable/eng"
-                    />
+                    android:fontFamily="@font/cairo_medium"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="10dp"
+                    android:text="قرية هندسية رائدة لجيل صاعد وطموح"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btLoginStart"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="75dp"
+                    android:layout_marginTop="30dp"
                     android:fontFamily="@font/cairo_black"
                     android:text="تسجيل الدخول"
                     android:textColor="#FAAA34"

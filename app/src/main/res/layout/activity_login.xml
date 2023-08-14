@@ -3,36 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     android:orientation="vertical"
     android:padding="15dp"
-    android:background="@drawable/back"
-
     tools:context=".LoginActivity">
-
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="0dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/engener"
-        />
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/engener" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/roundcornerstroke"
-        android:fontFamily="@font/cairo_bold"
         android:layout_gravity="right"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcornerstroke"
+        android:fontFamily="@font/cairo_bold"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:text="الرسالة"
         android:textColor="#2D82D1"
         android:textSize="28sp"
-        android:layout_marginBottom="10dp"
         android:textStyle="bold" />
 
     <TextView
@@ -48,61 +45,61 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/roundcornerstroke"
         android:fontFamily="@font/cairo_bold"
-        android:layout_gravity="right"
-        android:layout_marginRight="20dp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:text="الأندية"
         android:textColor="#2D82D1"
         android:textSize="28sp"
-        android:layout_marginBottom="10dp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/btProgrammingClub"
-        android:backgroundTint="#FFAE21"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        android:background="@drawable/roundcornerstroke"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:text="نادي البرمجة"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcornerstroke"
+        android:backgroundTint="#FFAE21"
         android:fontFamily="@font/cairo_bold"
+        android:text="نادي البرمجة"
+        android:textColor="@color/white"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/btEngineeringClub"
-        android:backgroundTint="#FFAE21"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/cairo_bold"
-        android:background="@drawable/roundcornerstroke"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcornerstroke"
+        android:backgroundTint="#FFAE21"
+        android:fontFamily="@font/cairo_bold"
         android:text="نادي الهندسة"
+        android:textColor="@color/white"
         android:textSize="25sp" />
 
     <Button
         android:id="@+id/btScienceClub"
-        android:backgroundTint="#FFAE21"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:textColor="@color/white"
-        android:background="@drawable/roundcornerstroke"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/cairo_bold"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundcornerstroke"
+        android:backgroundTint="#FFAE21"
+        android:fontFamily="@font/cairo_bold"
         android:text="نادي العلوم"
+        android:textColor="@color/white"
         android:textSize="25sp" />
 
 

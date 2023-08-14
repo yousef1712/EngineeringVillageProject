@@ -4,103 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-        <LinearLayout
-            android:id="@+id/startLoginPage"
+    <LinearLayout
+        android:id="@+id/startLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/engener" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo_bold"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="مؤسسة القرية الهندسية حاصنة الموهوبين"
+            android:textColor="#2D82D1"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/cairo_medium"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:text="قرية هندسية رائدة لجيل صاعد وطموح"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btLoginStart"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundcornerstroke"
+            android:fontFamily="@font/cairo_black"
+            android:padding="10dp"
+            android:text="تسجيل الدخول"
+            android:textColor="#FAAA34"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etUsername"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/back"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:fontFamily="@font/cairo_bold"
+            android:hint="Username" />
 
-
-
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="300dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="0dp"
-                    android:layout_marginTop="80dp"
-                    android:src="@drawable/engener"
-                    />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:fontFamily="@font/cairo_bold"
-                    android:gravity="center"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-
-                    android:text="مؤسسة القرية الهندسية حاصنة الموهوبين"
-                    android:textColor="#2D82D1"
-                    android:textSize="28sp"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/cairo_medium"
-                    android:gravity="center"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
-                    android:paddingTop="10dp"
-                    android:text="قرية هندسية رائدة لجيل صاعد وطموح"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/btLoginStart"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="30dp"
-                    android:fontFamily="@font/cairo_black"
-                    android:text="تسجيل الدخول"
-                    android:textColor="#FAAA34"
-                    android:padding="10dp"
-                    android:background="@drawable/roundcornerstroke"
-                    android:textSize="22sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/loginPage"
+        <EditText
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:visibility="gone">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="password" />
 
-                <EditText
-                    android:id="@+id/etUsername"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="320dp"
-                    android:fontFamily="@font/cairo_bold"
-                    android:hint="Username" />
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="login"
+            android:textSize="25sp" />
 
-                <EditText
-                    android:id="@+id/etPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="password"
-                    android:layout_marginTop="25dp"/>
-
-                <Button
-                    android:id="@+id/btLogin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="25dp"
-                    android:text="login"
-                    android:textSize="25sp"/>
-
-        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

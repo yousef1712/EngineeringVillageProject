@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/startLoginPage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/back"
-        android:orientation="vertical">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/loginPage"
+        app:layout_constraintTop_toTopOf="@+id/loginPage">
 
         <ImageView
+            android:id="@+id/ivEng"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:layout_marginTop="80dp"
             android:layout_marginBottom="0dp"
-            android:src="@drawable/engener" />
+            android:src="@drawable/engener"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/cairo_bold"
@@ -33,22 +39,25 @@
             android:text="مؤسسة القرية الهندسية حاصنة الموهوبين"
             android:textColor="#2D82D1"
             android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/ivEng"
+            tools:ignore="MissingConstraints" />
 
 
         <TextView
+            android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/cairo_medium"
             android:gravity="center"
-            android:paddingLeft="30dp"
-            android:paddingTop="10dp"
-            android:paddingRight="30dp"
             android:text="قرية هندسية رائدة لجيل صاعد وطموح"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
 
         <Button
             android:id="@+id/btLoginStart"
@@ -61,51 +70,60 @@
             android:padding="10dp"
             android:text="تسجيل الدخول"
             android:textColor="#FAAA34"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv2" />
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginPage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/back"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:padding="30dp"
+        app:layout_constraintStart_toStartOf="@+id/startLoginPage"
+        app:layout_constraintTop_toTopOf="@+id/startLoginPage">
 
 
         <ImageView
+            android:id="@+id/ivEng2"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:layout_marginBottom="0dp"
-            android:src="@drawable/engener" />
+            android:src="@drawable/engener"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
             android:background="@drawable/roundcornerstroke"
             android:fontFamily="@font/cairo_bold"
+            android:gravity="right"
             android:hint="الاسم"
-            android:padding="15dp" />
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivEng2" />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/roundcornerstroke"
             android:fontFamily="@font/cairo_bold"
+            android:gravity="right"
             android:hint="كلمة المرور"
             android:inputType="textPassword"
-            android:padding="15dp" />
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etUsername" />
 
         <Button
             android:id="@+id/btLogin"
@@ -119,10 +137,12 @@
             android:padding="10dp"
             android:text=" الدخول"
             android:textColor="@color/white"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPassword" />
 
-            android:textSize="22sp" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

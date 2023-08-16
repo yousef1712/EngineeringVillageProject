@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
@@ -9,20 +11,23 @@
     tools:context=".LoginActivity">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
-        android:src="@drawable/engener" />
+        android:id="@+id/img1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/engener"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:layout_marginTop="-20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
         android:background="@drawable/roundcornerstroke"
         android:fontFamily="@font/cairo_bold"
         android:paddingLeft="30dp"
@@ -30,77 +35,96 @@
         android:text="الرسالة"
         android:textColor="#2D82D1"
         android:textSize="28sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/cairo_medium"
         android:gravity="right"
         android:paddingLeft="30dp"
+        android:paddingTop="20dp"
         android:paddingRight="30dp"
+        android:paddingBottom="10dp"
         android:text="توفير البيئة المناسبة لصقل المهارات العملية واختضان روح الابداع والابتكار من خلال توفير التدريب والخبرة والمختبرات"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
         android:background="@drawable/roundcornerstroke"
         android:fontFamily="@font/cairo_bold"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         android:text="الأندية"
         android:textColor="#2D82D1"
+
         android:textSize="28sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btProgrammingClub"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/roundcornerstroke"
         android:backgroundTint="#FFAE21"
         android:fontFamily="@font/cairo_bold"
         android:text="نادي البرمجة"
         android:textColor="@color/white"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btEngineeringClub"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
         android:background="@drawable/roundcornerstroke"
         android:backgroundTint="#FFAE21"
         android:fontFamily="@font/cairo_bold"
         android:text="نادي الهندسة"
         android:textColor="@color/white"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btProgrammingClub"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btScienceClub"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
         android:background="@drawable/roundcornerstroke"
         android:backgroundTint="#FFAE21"
         android:fontFamily="@font/cairo_bold"
         android:text="نادي العلوم"
         android:textColor="@color/white"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btEngineeringClub"
+        tools:ignore="MissingConstraints" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

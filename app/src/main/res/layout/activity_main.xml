@@ -9,9 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/startLoginPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="@+id/loginPage"
         app:layout_constraintTop_toTopOf="@+id/loginPage">
 
@@ -20,13 +19,11 @@
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
-            android:layout_marginTop="80dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginTop="16dp"
             android:src="@drawable/engener"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <TextView
             android:id="@+id/tv1"
@@ -38,11 +35,10 @@
             android:paddingRight="30dp"
             android:text="مؤسسة القرية الهندسية حاصنة الموهوبين"
             android:textColor="#2D82D1"
-            android:textSize="28sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/ivEng"
             tools:ignore="MissingConstraints" />
-
 
         <TextView
             android:id="@+id/tv2"
@@ -82,16 +78,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="30dp"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="@+id/startLoginPage"
         app:layout_constraintTop_toTopOf="@+id/startLoginPage">
-
 
         <ImageView
             android:id="@+id/ivEng2"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="16dp"
             android:src="@drawable/engener"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -141,7 +137,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/etPassword" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

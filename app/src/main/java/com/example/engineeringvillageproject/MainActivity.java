@@ -2,6 +2,7 @@
 package com.example.engineeringvillageproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -13,7 +14,7 @@ import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout startLoginPage, loginPage;
+    ConstraintLayout startLoginPage, loginPage;
     EditText etUsername, etPassword;
     Button btLoginStart, btLogin;
     Intent i;

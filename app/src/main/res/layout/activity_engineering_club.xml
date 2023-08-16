@@ -22,6 +22,7 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/howWe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -75,11 +76,10 @@
 
         </LinearLayout>
 
-
     </LinearLayout>
 
-
     <LinearLayout
+        android:id="@+id/theOtherThing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -134,16 +134,13 @@
 
         </LinearLayout>
 
-
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:padding="15dp">
-
 
         <Button
             android:id="@+id/btBack"

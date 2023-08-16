@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/back"
+        android:visibility="gone"
         android:orientation="vertical">
 
         <ImageView
@@ -70,31 +71,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="gone">
+        android:background="@drawable/back"
+        >
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/engener" />
 
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
+            android:background="@drawable/roundcornerstroke"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="320dp"
+            android:layout_marginTop="0dp"
             android:fontFamily="@font/cairo_bold"
-            android:hint="Username" />
+            android:hint="الاسم" />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
+            android:background="@drawable/roundcornerstroke"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:hint="password" />
+            android:fontFamily="@font/cairo_bold"
+            android:layout_marginTop="15dp"
+            android:hint="كلمة المرور" />
 
         <Button
             android:id="@+id/btLogin"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundcornerstroke"
+            android:backgroundTint="#FAAA34"
+            android:fontFamily="@font/cairo_black"
+            android:padding="10dp"
+            android:text=" الدخول"
+            android:textColor="@color/white"
             android:layout_marginTop="25dp"
-            android:text="login"
-            android:textSize="25sp" />
+
+            android:textSize="22sp" />
+
+
 
     </LinearLayout>
 

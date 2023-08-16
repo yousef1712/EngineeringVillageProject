@@ -104,6 +104,7 @@
             android:background="@drawable/roundcornerstroke"
             android:fontFamily="@font/cairo_bold"
             android:hint="كلمة المرور"
+            android:inputType="textPassword"
             android:padding="15dp" />
 
         <Button

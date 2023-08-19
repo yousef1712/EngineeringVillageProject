@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 String y = etPassword.getText().toString();
                 if (etUsername.getText().toString().equals(username) && etPassword.getText().toString().equals(password)) {
                     startActivity(i);
+                }else {
+                    Toast.makeText(MainActivity.this, "Login Filed!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
